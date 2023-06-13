@@ -17,16 +17,25 @@
                             <th>Category</th>
                             <th>Name</th>
                             <th>Price</th>
+                            <th>Image</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($product as $products)
+                        @foreach ($products as $products)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $products->category->name }}</td>
                                 <td>{{ $products['name'] }}</td>
                                 <td>Rp. {{ number_format($products->price, 0, 2) }}</td>
+                                <td>
+                                    @if ($products->image == null)
+                                        <span class="badge bg-primary">No Image</span>
+                                    @else
+                                        <img src="{{ asset('storage/product/' . $products->image) }}"
+                                            alt="{{ $products->name }}" style="max-width: 50px">
+                                    @endif
+                                </td>
                                 <td>
                                     <form onsubmit="return confirm('Are You Sure? ');"
                                         action="{{ route('product.destroy', $products->id) }}" method="POST">
