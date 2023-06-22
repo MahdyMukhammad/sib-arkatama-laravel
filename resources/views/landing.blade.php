@@ -46,7 +46,7 @@
                         <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                     </a>
                     @auth
-                        <a href="{{ route('dashboard') }}" class="btn btn-outline-light ms-1">
+                        <a href="{{ route('dashboard') }}" class="btn btn-outline-dark ms-1">
                             <i class="bi-person-fill me-1"></i>
                             Dashboard
                         </a>
@@ -96,7 +96,7 @@
     </div>
     <!-- Section-->
     <section class="py-5">
-        <h2 class="text text-center">CATEGORIES</h2>
+        <h2 class="text text-center">PRODUCTS</h2>
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
