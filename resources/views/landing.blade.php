@@ -38,6 +38,7 @@
                             @endforeach
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contact">contact</li>
                 </ul>
                 <form class="d-flex">
                     <a class="btn btn-outline-dark" type="submit">
@@ -94,7 +95,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!-- Section-->
+    <!-- Section products-->
     <section class="py-5">
         <h2 class="text text-center">PRODUCTS</h2>
         <div class="container px-4 px-lg-5 mt-5">
@@ -146,6 +147,68 @@
                 @endforelse
             </div>
         </div>
+    </section>
+    <!-- Section Visi Misi-->
+    <section class="about" id="about">
+
+        <div class="row">
+
+            <div class="content">
+                <h3 class="text text-center">VISI & MISI</h3>
+                <p class="text text-center">Visi Menjadi tempat belanja online yang terpercaya dan memberikan kualitas
+                    terbaik dari segi mutu maupun pelayanan terhadap konsumen</p>
+                <p class="text text-center">Misi Melayani segala kebutuhan pembeli baik mulai dari pemesanan hingga
+                    pengiriman barang sampai di
+                    tempat pembeli.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Section contact us-->
+    <section class="contact" id="contact">
+
+        <div class="card-body" style="margin:100px">
+            <form>
+                <h3 class="text text-center">CONTACT US</h3>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="inputName" type="text" name="name"
+                        placeholder="Enter your name" />
+                    <label for="inputFirstName">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="inputEmail" type="email" name="email"
+                        placeholder="name@example.com" />
+                    <label for="inputEmail">Email address</label>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="inputPassword" type="password" name="password"
+                                placeholder="Create a password" />
+                            <label for="inputPassword">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3 mb-md-0">
+                            <input class="form-control" id="inputPhone" name="phone" type="text"
+                                placeholder="Confirm phone" />
+                            <label for="inputPhone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-floating mb-3 mb-md-0"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comment" rows="3"></textarea>
+                    </div>
+                    <div class="mt-4 mb-0">
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-block" type="submit">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </section>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
